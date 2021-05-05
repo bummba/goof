@@ -12,7 +12,9 @@
     "build": "browserify -r jquery > public/js/bundle.js",
     "cleanup": "mongo express-todo --eval 'db.todos.remove({});'",
     "snyk-1": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD)",
-    "snyk": "snyk monitor --project-name=(git rev-parse --symbolic-full-name --abbrev-ref HEAD)"
+    "snyk": "snyk monitor --project-name=(git rev-parse --symbolic-full-name --abbrev-ref HEAD)",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": "6.14.1"
@@ -30,7 +32,7 @@
     "ejs-locals": "1.0.2",
     "electron": "^11.2.1",
     "errorhandler": "1.2.0",
-    "express": "4.12.3",
+    "express": "4.16.0",
     "express-fileupload": "0.0.5",
     "ffmpeg": "0.0.4",
     "ffmpeg-sdk": "0.0.5",
@@ -52,9 +54,11 @@
     "st": "^1.2.2",
     "stream-buffers": "^3.0.1",
     "tap": "^5.7.0",
-    "xmldom": "^0.3.0"
+    "xmldom": "^0.3.0",
+    "snyk": "^1.583.0"
   },
   "devDependencies": {
     "browserify": "^13.1.1"
-  }
+  },
+  "snyk": true
 }
