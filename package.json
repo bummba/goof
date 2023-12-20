@@ -31,7 +31,7 @@
     "electron": "^11.2.1",
     "errorhandler": "1.2.0",
     "express": "4.12.3",
-    "express-fileupload": "0.0.5",
+    "express-fileupload": "1.1.10",
     "ffmpeg": "0.0.4",
     "ffmpeg-sdk": "0.0.5",
     "file-type": "^8.1.0",
@@ -51,7 +51,7 @@
     "requestidlecallback-polyfill": "^1.0.2",
     "st": "^1.2.2",
     "stream-buffers": "^3.0.1",
-    "tap": "^5.7.0",
+    "tap": "^16.0.0",
     "xmldom": "^0.3.0"
   },
   "devDependencies": {
